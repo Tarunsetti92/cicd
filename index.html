@@ -13,9 +13,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
       text-align: center;
+    }
+    header {
+      padding: 3em 1em 1em;
     }
     h1 {
       font-size: 3em;
@@ -38,11 +39,65 @@
     .btn:hover {
       background-color: #f0f0f0;
     }
+    section {
+      padding: 2em 1em;
+      max-width: 800px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+    .feature {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1em;
+      border-radius: 8px;
+      width: 250px;
+    }
+    .team {
+      margin-top: 2em;
+    }
+    footer {
+      margin-top: auto;
+      padding: 1em;
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 100%;
+    }
   </style>
 </head>
 <body>
-  <h1>🚀 Deployment Successful!</h1>
-  <p>Your Node.js application is now live and running smoothly.</p>
-  <a class="btn" href="https://your-app-url.com">Go to App</a>
+  <header>
+    <h1>🚀 Deployment Successful!</h1>
+    <p>Your Node.js application is now live and running smoothly.</p>
+    <a class="btn" href="https://your-app-url.com">Go to App</a>
+  </header>
+
+  <section>
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Fast & Scalable</h3>
+        <p>Built on Node.js for high performance and seamless scaling.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure</h3>
+        <p>Deployed with best practices for data protection and access control.</p>
+      </div>
+      <div class="feature">
+        <h3>Cloud-Ready</h3>
+        <p>Optimized for AWS Elastic Beanstalk and CI/CD pipelines.</p>
+      </div>
+    </div>
+
+    <div class="team">
+      <h2>Meet the Team</h2>
+      <p>Developed by a passionate crew of engineers, designers, and dreamers. We build with purpose and deploy with pride.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+  </footer>
 </body>
 </html>
